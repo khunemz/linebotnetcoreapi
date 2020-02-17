@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <UserSecretsId>02817130-a8c2-4107-90f9-9d97cfce9acf</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Line.Messaging" Version="1.4.5" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.Cognitive.LUIS" Version="1.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.4.10" />
+    <PackageReference Include="nlog" Version="4.6.8" />
+    <PackageReference Include="nlog.config" Version="4.6.8" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Newtonsoft" Version="5.0.0" />
+    <PackageReference Include="WindowsAzure.Storage" Version="7.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="CloudStorage\" />
+  </ItemGroup>
+
+</Project>
